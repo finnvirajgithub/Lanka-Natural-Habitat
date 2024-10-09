@@ -1,0 +1,55 @@
+
+
+body{
+    height: 100vh;
+}
+
+h1{
+    color: #5e5c5c;
+    font-size: 100px;
+}
+
+section{
+    height: 100vh;
+    
+    padding: 0 9%;
+}
+
+/*Customize your plan page */
+
+.section02 {
+    background: url(/images/customize\ bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'montserrat', sans-serif;
+    padding-top: 10px;
+}
+
+.section02 .title {
+    font-size: 60px;
+    top: 0%;
+    margin: 0%;
+
+}
+
+.section02 .title span {
+    color: #009700;
+}
+
+.customize-plan-para {
+    width: 50%;
+    padding-top: 5%;
+}
+
+.customize-plan-para p {
+    color: #5e5c5c;
+    font-family: 'montserrat', sans-serif;
+}
