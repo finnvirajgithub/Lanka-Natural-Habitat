@@ -1,5 +1,6 @@
 
 
+
 body{
     height: 100vh;
 }
@@ -53,3 +54,21 @@ section{
     color: #5e5c5c;
     font-family: 'montserrat', sans-serif;
 }
+
+body{
+    height: 500vh;
+}
+
+.section01{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: gray;
+    font-size: 100px;
+}
+
+
