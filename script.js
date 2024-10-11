@@ -73,39 +73,74 @@ let names = ["Adam's Peak",
 let sortedNames = names.sort();
 
 //referance
-let input = document.getElementById("input");
+let input1 = document.getElementById("input1");
+let input2 = document.getElementById("input2");
+let input3 = document.getElementById("input3");
+let input4 = document.getElementById("input4");
+let input5 = document.getElementById("input5");
+let input6 = document.getElementById("input6");
+let input7 = document.getElementById("input7");
+let input8 = document.getElementById("input8");
+let input9 = document.getElementById("input9");
+let input10 = document.getElementById("input10");
+let input11 = document.getElementById("input11");
+let input12 = document.getElementById("input12");
+let input13 = document.getElementById("input13");
+let input14 = document.getElementById("input14");
+let input15 = document.getElementById("input15");
 
-//execute function on keyup 
-input.addEventListener("keyup", (e) => {
-    //loop through above array
+autocomplete(input1);
+autocomplete(input2);
+autocomplete(input3);
+autocomplete(input4);
+autocomplete(input5);
+autocomplete(input6);
+autocomplete(input7);
+autocomplete(input8);
+autocomplete(input9);
+autocomplete(input10);
+autocomplete(input11);
+autocomplete(input12);
+autocomplete(input13);
+autocomplete(input14);
+autocomplete(input15);
 
-    //Initially remove all elements. 
-    removeElements();
+function autocomplete(input){
+        //execute function on keyup 
+    input.addEventListener("keyup", (e) => {
+        //loop through above array
 
-    for(let i of sortedNames){
-        //convert input to lowercase and compare with each string
-        if(i.toLowerCase().startsWith(input.value.toLowerCase()) && input.value != "") {
-            //create li element
-            let listItem = document.createElement("li");
-            //one common class name
-            listItem.classList.add("list-items");
-            listItem.style.cursor = "pointer";
-            listItem.setAttribute("onclick", "displayNames('" + i + "')");
+        //Initially remove all elements. 
+        removeElements();
 
-            //display matched part in bold
-            let word = "<b>" + i.substr(0, input.value.length) + "</b>";
-            word += i.substr(input.value.length);
-            
-            //display the value in array
-            listItem.innerHTML = word;
-            document.querySelector(".list").appendChild(listItem);
+        for(let i of sortedNames){
+            //convert input to lowercase and compare with each string
+            if(i.toLowerCase().startsWith(input.value.toLowerCase()) && input.value != "") {
+                //create li element
+                let listItem = document.createElement("li");
+                //one common class name
+                listItem.classList.add("list-items");
+                listItem.style.cursor = "pointer";
+                // listItem.setAttribute("onclick", "displayNames('" + i + "')");
+                listItem.classList.add("list-items");
+
+                //display matched part in bold
+                let word = "<b>" + i.substr(0, input.value.length) + "</b>";
+                word += i.substr(input.value.length);
+                
+                //display the value in array
+                listItem.innerHTML = word;
+                listItem.addEventListener("click", () => {
+                    displayNames(i); // On click, display the name in the input field
+                })
+                document.querySelector(".list").appendChild(listItem);
+            }
         }
-    }
-});
-
-function displayNames(value) {
-    input.value = value; 
-    removeElements();
+        function displayNames(value) {
+            input.value = value; 
+            removeElements();
+        }
+    });    
 }
 
 function removeElements() {
