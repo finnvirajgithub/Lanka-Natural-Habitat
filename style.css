@@ -143,7 +143,7 @@ form.secActive .form.first {
     flex-wrap: wrap;
 }
 
-.container form .fields .input-fields {
+.container form .fields .input-fields{
     display: flex;
     width: calc(100% / 2 - 30px);
     flex-direction: column;
@@ -155,7 +155,7 @@ form.secActive .form.first {
     font-weight: 500;
 }
 
-.input-fields input {
+.input-fields input{
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -194,7 +194,26 @@ form .buttons {
 
 form .buttons button {
     margin-left: 30px;
-}   
+}  
+
+ul {
+    list-style: none;
+}
+
+.list {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+.list-items {
+    padding: 10px 5px;
+}
+
+.list-items:hover {
+    background-color: #009700;
+    color: #fff;
+}
 
 /* @media (max-width: 750px){
     .container form {
@@ -210,6 +229,7 @@ form .buttons button {
     .container form .fields .input-fields {
         width: 100%;
     }
+
 }
 
 
