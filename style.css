@@ -112,6 +112,10 @@ section{
     transition: 0.3s ease;
 }
 
+.red {
+    color: red;
+}
+
 .container form .form.second {
     opacity: 0;
     pointer-events: none;
@@ -150,6 +154,13 @@ form.secActive .form.first {
     margin: 4px 0;
 }
 
+.container form .fields .step3{
+    display: flex;
+    width: calc(100% / 3 - 30px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
 .input-fields label {
     font-size: 12px;
     font-weight: 500;
@@ -167,6 +178,22 @@ form.secActive .form.first {
 }
 
 .input-fields input:is(:focus, :valid) {
+    box-shadow: o 3px 6px rgba(0, 0, 0, 0.13);
+    border: #009700 1px solid;
+}
+
+.container form .fields .step3 input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.container form .fields .step3 input:is(:focus) {
     box-shadow: o 3px 6px rgba(0, 0, 0, 0.13);
     border: #009700 1px solid;
 }
@@ -198,9 +225,11 @@ form .buttons button {
 
 ul {
     list-style: none;
+    position: relative;
 }
 
 .list {
+    position: absolute;
     width: 50%;
     background-color: #fff;
     border-radius: 0 0 5px 5px;
@@ -213,6 +242,27 @@ ul {
 .list-items:hover {
     background-color: #009700;
     color: #fff;
+}
+
+.step4 {
+    margin-left: 30px;
+    width: 700px;
+}
+.container form .msg input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.container form .msg input:is(:focus) {
+    box-shadow: o 3px 6px rgba(0, 0, 0, 0.13);
+    border: #009700 1px solid;
 }
 
 /* @media (max-width: 750px){
