@@ -8,7 +8,7 @@ nextBtn.addEventListener("click", () => {
         if(input.value != ""){
             form.classList.add('secActive')
         }else{
-            form.classList.add('secActive')
+            form.classList.remove('secActive')
         }
     });
 })
@@ -165,4 +165,37 @@ function removeElements() {
     items.forEach((item) => {
         item.remove();
     })
+}
+
+//Emailjs function
+
+function sendMail(){
+    let params = {
+        name : document.getElementById("name").value,
+        country : document.getElementById("country").value,
+        email : document.getElementById("email").value,
+        phone : document.getElementById("phone").value,
+        arrivalDate : document.getElementById("arrivalDate").value,
+        duration : document.getElementById("duration").value,
+        count : document.getElementById("count").value,
+        vehicle : document.getElementById("vehicle").value,
+        day01 : document.getElementById("input1").value,
+        day02 : document.getElementById("input2").value,
+        day03 : document.getElementById("input3").value,
+        day04 : document.getElementById("input4").value,
+        day05 : document.getElementById("input5").value,
+        day06 : document.getElementById("input6").value,
+        day07 : document.getElementById("input7").value,
+        day08 : document.getElementById("input8").value,
+        day09 : document.getElementById("input9").value,
+        day10 : document.getElementById("input10").value,
+        day11 : document.getElementById("input11").value,
+        day12 : document.getElementById("input12").value,
+        day13 : document.getElementById("input13").value,
+        day14 : document.getElementById("input14").value,
+        day15 : document.getElementById("input15").value,
+        message : document.getElementById("message").value
+    }
+    emailjs.send("service_rm60x8h","template_ghus0iq",params).then(alert("Your Plan Submitted Succesfully!"));
+    form.reset()
 }
