@@ -230,7 +230,7 @@ ul {
 
 .list {
     position: absolute;
-    width: 50%;
+    width: calc(100% / 3 - 30px);
     background-color: #fff;
     border-radius: 0 0 5px 5px;
 }
