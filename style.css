@@ -1,0 +1,285 @@
+
+
+
+body{
+    height: 100vh;
+}
+
+h1{
+    color: #5e5c5c;
+    font-size: 100px;
+}
+
+section{
+    height: 100vh;
+    
+    padding: 0 9%;
+}
+
+/*Customize your plan page */
+
+.section02 {
+    background: url(/images/customize\ bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'montserrat', sans-serif;
+    padding-top: 10px;
+}
+
+.section02 .title {
+    font-size: 60px;
+    top: 0%;
+    margin: 0%;
+
+}
+
+.title span {
+    color: #009700;
+}
+
+.customize-plan-para {
+    width: 50%;
+    padding-top: 5%;
+}
+
+.customize-plan-para p {
+    color: #5e5c5c;
+    font-family: 'montserrat', sans-serif;
+}
+/* form */
+
+.custom-select {
+    width: 20px;
+}
+
+.section06 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/customize\ bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'montserrat', sans-serif;
+
+}
+
+.container {
+    
+    min-height: 95vh;
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    /* margin: 0 15px; */
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+.container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    left: 0;
+    background-color: #009700;
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+}
+
+.container form .form {
+    position: absolute;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.red {
+    color: red;
+}
+
+.container form .form.second {
+    opacity: 0;
+    pointer-events: none;
+}
+
+form.secActive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+}
+
+.container form .fields .input-fields{
+    display: flex;
+    width: calc(100% / 2 - 30px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.container form .fields .step3{
+    display: flex;
+    width: calc(100% / 3 - 30px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-fields label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input-fields input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-fields input:is(:focus, :valid) {
+    box-shadow: o 3px 6px rgba(0, 0, 0, 0.13);
+    border: #009700 1px solid;
+}
+
+.container form .fields .step3 input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.container form .fields .step3 input:is(:focus) {
+    box-shadow: o 3px 6px rgba(0, 0, 0, 0.13);
+    border: #009700 1px solid;
+}
+
+.input-fields input[type="date"] {
+    color: #707070;
+}
+
+.input-fields input[type="date"]:valid {
+    color: #333;
+}
+
+.container form .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 30px;
+}
+
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button {
+    margin-left: 30px;
+}  
+
+ul {
+    list-style: none;
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    width: calc(100% / 3 - 30px);
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+.list-items {
+    padding: 10px 5px;
+}
+
+.list-items:hover {
+    background-color: #009700;
+    color: #fff;
+}
+
+.step4 {
+    margin-left: 30px;
+    width: 700px;
+}
+.container form .msg input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.container form .msg input:is(:focus) {
+    box-shadow: o 3px 6px rgba(0, 0, 0, 0.13);
+    border: #009700 1px solid;
+}
+
+/* @media (max-width: 750px){
+    .container form {
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar {
+        display: none;
+    }
+} */
+
+@media (max-width: 550px){
+    .container form .fields .input-fields {
+        width: 100%;
+    }
+
+}
+
+
