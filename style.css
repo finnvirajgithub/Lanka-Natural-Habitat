@@ -19,7 +19,7 @@ section{
 /*Customize your plan page */
 
 .section02 {
-    background: url(/images/customize\ bg.png);
+    background: url(/images/customize\bg.png);
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -281,5 +281,3 @@ ul {
     }
 
 }
-
-
