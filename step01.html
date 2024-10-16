@@ -31,12 +31,59 @@
 
 </head>
 <body>
+    <!-- Navbar -->
+ 
     
     <section class="section06">
+        <nav class="navbar">
+            <div class="logo">
+              <a href="home.html"><img src="/images/tripadvisor_main-removebg-preview.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#destinations">Destinations</a></li>
+              <li class="dropdown">
+                <a href="#tours" class="dropbtn">Tours</a>
+                <div class="dropdown-content">
+                  <a href="#day-tours">Day Tours</a>
+                  <a href="#round-tours">Round Tours</a>
+                  <a href="#private-tours">Private Tours</a>
+                </div>
+              </li>
+              <li><a href="step01.html" class="active">Customize Tour</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Cover Page Content -->
+            <div class="cover-page">
+                <h1>Customize Your Own Tour</h1>
+            </div>
         
+        
+        
+    </section>
+
+    <div class="containercustomize">
+        <h1>Our Tailor-Made Tour Facilities: Crafted Just for You</h1>
+        <p>we specialize in creating fully customized tours tailored to your personal preferences, ensuring that every aspect of your journey is designed just for you. Whether you're looking for a cultural adventure, a relaxing retreat, or an active exploration, our tailor-made tours provide the flexibility and freedom to travel your way.</p>
     
+        <h2>What sets us apart?</h2>
+        <ul>
+            <li><strong>Personalized Itineraries:</strong> We work with you to craft an itinerary that reflects your interests, covering destinations and activities that matter to you. Whether it’s off-the-beaten-path experiences or must-see landmarks, your tour is uniquely yours.</li>
+            <li><strong>Private Driver Service:</strong> Travel in comfort with your own private driver, ensuring hassle-free transportation throughout your journey. Our experienced and professional drivers know the best routes, hidden gems, and can adapt to any last-minute changes, giving you the freedom to explore at your own pace.</li>
+            <li><strong>Luxury & Comfort:</strong> Choose from a range of handpicked accommodations, from luxurious resorts to boutique hotels, ensuring your stay complements your travel experience.</li>
+            <li><strong>Local Expertise:</strong> Our team of local experts is at your disposal, providing insider knowledge and personalized recommendations, whether you prefer a guided tour or a more independent experience.</li>
+            <li><strong>Full Flexibility:</strong> With our tailor-made tours, you're not confined to fixed schedules or group dynamics. You decide how long to stay in each destination, what to see, and when to move to your next adventure.</li>
+        </ul>
+    
+        <p>From solo travelers to couples, families, and groups, we provide a seamless and personalized travel experience that makes exploring effortless and memorable.</p>
+    </div>
+    <div class="title-box">
+        <h1 class="title">Make Your <span>Own Plan</span></h1>
+    </div>
+    <section class="formsection">
         <div class="container">
-            <header>Make Your Own Plan</header>
+            
             <form action="#">
                 <div class="form first">
                     <div class="personal details">
@@ -91,8 +138,6 @@
 
                         
                     </div>
-
-                    <button type="submit" class="btn btn-success next">Next</button>
                 </div>
 
                 <div class="form second">
@@ -219,7 +264,6 @@
                     
 
                     <div class="buttons">
-                        <button type="submit" class="btn btn-success back">Previous</button>
                         <button type="submit" class="btn btn-success send" onclick="sendMail()">Submit</button>
                     </div>
                     
@@ -228,7 +272,32 @@
 
             
         </div>
+
     </section>
+      <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-left">
+      <ul class="footer-nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="step01.html">Customize Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  
+      <div class="footer-contact">
+        <p>Phone: +123 456 789</p>
+        <p>Address: 123 Main Street, Kandy, Sri Lanka</p>
+        <p>Facebook: <a href="https://www.facebook.com/yourpage">Your Facebook Page</a></p>
+        <p>Email: <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
+      </div>
+    </div>
+  
+    <div class="footer-right">
+      <img src="/images/sosrilanka.png" alt="Sponsor 1">
+      <img src="/images/tourradar.png" alt="Sponsor 2">
+      <img src="/images/tripadvisor.png" alt="Sponsor 3">
+    </div>
+  </footer>
 
     <script src="script.js"></script>
     

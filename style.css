@@ -16,6 +16,152 @@ section{
     padding: 0 9%;
 }
 
+/* Home page */
+
+/* Navbar Styling */
+.navbar {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: transparent; /* Transparent background */
+    z-index: 1000;
+  }
+  
+  /* Logo Styling */
+  .logo img {
+    height: 100px; /* Adjust the height as per your logo */
+  }
+  
+  /* Nav Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a.active {
+    color: orange;
+  }
+  
+  .nav-links a:hover {
+    color: orange; 
+    text-decoration: none;/* Change to a hover color if needed */
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: transparent; /* Change the hover effect */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Cover Page Styling */
+
+  .section01 {
+    background-image: url('/images/Tour-a-Sri-Lankan-tea-estate-header.jpg');
+    background-repeat: no-repeat;  /* Center the image */
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .cover-page {
+    height: 400px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .cover-page h1 {
+    color: white;
+    z-index: 9;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .cover-page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    z-index: 1;
+    background: rgba(0, 0 , 0 , 0.5);
+  }
+
+/* Animation for h1 */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px); /* Starts slightly below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Moves to its original position */
+    }
+  }
+  
+  /* Apply the animation to h1 */
+  .cover-page h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: fadeInUp 2s ease-in-out; /* Animation over 2 seconds */
+  }
+
+.section01 {
+    height: 100vh;
+}
+
+.btninhome {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btninhome button{
+    padding: 30px 50px;
+}
+
 /*Customize your plan page */
 
 .section02 {
@@ -54,6 +200,34 @@ section{
     color: #5e5c5c;
     font-family: 'montserrat', sans-serif;
 }
+
+.containercustomize {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.containercustomize h1 {
+    text-align: center;
+    color: #333;
+}
+.containercustomize h2 {
+    color: #555;
+}
+.containercustomize p {
+    color: #666;
+    line-height: 1.6;
+}
+.containercustomize ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.containercustomize ul li {
+    margin: 10px 0;
+    color: #666;
+}
+
+
 /* form */
 
 .custom-select {
@@ -61,19 +235,21 @@ section{
 }
 
 .section06 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(/images/customize\ bg.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    font-family: 'montserrat', sans-serif;
+    background-image: url(/images/customize\ bg-\ cover.png.jpg);
+    background-repeat: no-repeat;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80vh;
 
+}
+
+.formsection {
+    margin-top: 10vh;
+    height: auto;
+    margin-bottom: 20vh;
 }
 
 .container {
     
-    min-height: 95vh;
     position: relative;
     max-width: 90%;
     width: 100%;
@@ -107,7 +283,7 @@ section{
 }
 
 .container form .form {
-    position: absolute;
+    position: relative;
     width: 100%;
     transition: 0.3s ease;
 }
@@ -116,24 +292,8 @@ section{
     color: red;
 }
 
-.container form .form.second {
-    opacity: 0;
-    pointer-events: none;
-}
-
-form.secActive .form.second {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-form.secActive .form.first {
-    opacity: 0;
-    pointer-events: none;
-}
-
 .container form .title {
     display: block;
-    margin-bottom: 8px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -265,6 +425,14 @@ ul {
     border: #009700 1px solid;
 }
 
+
+
+/* footer */
+
+.section07 {
+    height: 50%;
+}
+
 /* @media (max-width: 750px){
     .container form {
         overflow-y: scroll;
@@ -283,3 +451,120 @@ ul {
 }
 
 
+/* footer */
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh; /* Set footer height to 50% of the viewport height */
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    color: white;
+  }
+  
+  /* Left section (Nav links and contact info) */
+  .footer-left {
+    width: 60%; /* Takes up 60% of the footer */
+  }
+  
+  .footer-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-nav-links li a:hover {
+    color: #ff6347; /* Hover color for links */
+  }
+  
+  .footer-contact p {
+    margin: 10px 4rem;
+  }
+  
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    color: #ff6347;
+  }
+  
+  /* Right section (Sponsor images) */
+  .footer-right {
+    width: 50%; /* Takes up 30% of the footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-right img {
+    width: 200px; /* Adjust the size of sponsor images */
+    height: auto;
+    margin-left: 15px;
+  }
+  
+  .footer-right img:hover {
+    transform: scale(1.1); /* Simple hover effect */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* kandy day tour */
+
+  .sectionkandydaytour {
+    background-image: url("/images/kandydaytourcopy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+    
+
+}
+
+.containerkandy {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    color: #333;
+}
+.itinerary-item {
+    margin-bottom: 20px;
+}
+.time {
+    font-weight: bold;
+    color: #555;
+}
+.note {
+    background: #e7f3fe;
+    padding: 10px;
+    border-left: 4px solid #2196F3;
+    margin-top: 20px;
+}
+ul {
+    padding-left: 20px;
+}
+
+  
+  /* 3day tour */
+
+  .section3daytour {
+    background-image: url("/images/3daytour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+    
+
+}
