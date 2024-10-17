@@ -159,7 +159,8 @@ section{
 }
 
 .btninhome button{
-    padding: 30px 50px;
+    padding: 20px 30px;
+    font-size: 20px;
 }
 
 /*Customize your plan page */
@@ -173,6 +174,7 @@ section{
 .title-box {
     display: flex;
     justify-content: center;
+    margin-top: 10vh;
 }
 
 .title {
@@ -517,6 +519,91 @@ ul {
     transition: transform 0.3s ease-in-out;
   }
 
+  /* contact page */
+
+.sectioncontact {
+  background-image: url("/images/contactpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  margin-bottom: 50px;
+}
+
+.containercontact {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.containercontact .left-section {
+  width: 48%;
+}
+.containercontact .right-section {
+  width: 48%;
+}
+.containercontact .form-group {
+  margin-bottom: 15px;
+}
+.containercontact .form-group input, .containercontact.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.containercontact.form-group textarea {
+  width: 100%;
+}
+
+.containercontact button {
+  padding: 10px 20px;
+  background-color: #009700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.containercontact button:hover {
+  background-color: #0056b3;
+}
+.containercontact .contact-details, .qr-code {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.containercontact .contact-details i, .containercontact .qr-code i {
+  margin-right: 10px;
+}
+.containercontact .contact-details h3, .containercontact .qr-code h3 {
+  margin-top: 0;
+}
+
+.containercontact .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.containermap {
+  width: 100%;
+}
+
+.containermap iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
   /* kandy day tour */
 
   .sectionkandydaytour {
@@ -530,37 +617,114 @@ ul {
 }
 
 .containerkandy {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: auto;
+    margin: 20px 9rem;
     background: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h1, h2 {
+.containerkandy h1, h2 {
     color: #333;
 }
-.itinerary-item {
+.containerkandy .itinerary-item {
     margin-bottom: 20px;
 }
-.time {
+.containerkandy .time {
     font-weight: bold;
     color: #555;
 }
-.note {
-    background: #e7f3fe;
-    padding: 10px;
-    border-left: 4px solid #2196F3;
-    margin-top: 20px;
-}
-ul {
+
+.containerkandy ul {
     padding-left: 20px;
+}
+
+ /* sigiriya day tour */
+
+ .sectionsigiriyadaytour {
+  background-image: url("/images/sigiriyadaytour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.containersigiriya {
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+.containersigiriya h1, h2 {
+  color: #333;
+}
+.containersigiriya .itinerary-item {
+  margin-bottom: 20px;
+}
+.containersigiriya .time {
+  font-weight: bold;
+  color: #555;
+}
+
+.containersigiriya ul {
+  padding-left: 20px;
+}
+
+/* colombo city tour */
+
+.sectioncolombocitytour {
+  background-image: url("/images/colombocitytour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.containercolombo {
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+.containercolombo h1, h2 {
+  color: #333;
+}
+.containercolombo .itinerary-item {
+  margin-bottom: 20px;
+}
+
+/* negombo city tour */
+
+.sectionnegombocitytour {
+  background-image: url("/images/negombocitytour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.containernegombo {
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+.containernegombo h1, h2 {
+  color: #333;
+}
+.containernegombo .itinerary-item {
+  margin-bottom: 20px;
 }
 
   
   /* 3day tour */
 
   .section3daytour {
-    background-image: url("/images/3daytour.jpg");
+    background-image: url("/images/sigiriyadaytour.jpg");
     background-repeat: no-repeat;
     background-size: cover;/* Center the image in the section */
     font-family: 'Montserrat', sans-serif;
