@@ -857,3 +857,55 @@ ul {
   background-color: #007a00;
 }
 
+/* destinations page */
+
+.sectiondestinations {
+  background-image: url("/images/destinations.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+
+
+.cards-container-destination {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 20px; /* Margin between cards */
+  padding: 20px;
+}
+
+.cards-container-destination .card {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%; /* Aspect ratio for landscape (16:9) */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cards-container-destination .card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(0, 0, 0, 0.8); /* Slight darkening effect on hover */
+}
+
+.cards-container-destination .card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  pointer-events: none; /* Ensures text is not clickable */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better contrast */
+}
