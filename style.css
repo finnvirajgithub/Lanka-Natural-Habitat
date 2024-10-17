@@ -94,10 +94,12 @@ section{
   
   /* Cover Page Styling */
 
-  .section01 {
-    background-image: url('/images/Tour-a-Sri-Lankan-tea-estate-header.jpg');
-    background-repeat: no-repeat;  /* Center the image */
+  .sectionhome {
+    background-image: url("/images/Tour-a-Sri-Lankan-tea-estate-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
     font-family: 'Montserrat', sans-serif;
+    height: 80%;
     
   }
   .cover-page {
@@ -237,10 +239,11 @@ section{
 }
 
 .section06 {
-    background-image: url(/images/customize\ bg-\ cover.png.jpg);
-    background-repeat: no-repeat;/* Center the image in the section */
+    background-image: url("/images/customize\ bg-\ cover.png.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
     font-family: 'Montserrat', sans-serif;
-    height: 80vh;
+    height: 80%;
 
 }
 
@@ -732,3 +735,125 @@ ul {
     
 
 }
+
+
+/* day tour page */
+
+.sectiondaytour {
+  background-image: url("/images/20181008_093328copy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.containerbenifitdaytour {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.benefit-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+}
+
+.benefit-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 20px; /* Spacing between cards */
+  justify-items: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  width: 400px; /* Larger card width */
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  position: relative;
+  height: 300px; /* Increased height for larger cards */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.card-image h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.7em;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover .card-image h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.view-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: #009700;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #007a00;
+}
+
