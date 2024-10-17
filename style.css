@@ -519,6 +519,91 @@ ul {
     transition: transform 0.3s ease-in-out;
   }
 
+  /* contact page */
+
+.sectioncontact {
+  background-image: url("/images/contactpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  margin-bottom: 50px;
+}
+
+.containercontact {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.containercontact .left-section {
+  width: 48%;
+}
+.containercontact .right-section {
+  width: 48%;
+}
+.containercontact .form-group {
+  margin-bottom: 15px;
+}
+.containercontact .form-group input, .containercontact.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.containercontact.form-group textarea {
+  width: 100%;
+}
+
+.containercontact button {
+  padding: 10px 20px;
+  background-color: #009700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.containercontact button:hover {
+  background-color: #0056b3;
+}
+.containercontact .contact-details, .qr-code {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.containercontact .contact-details i, .containercontact .qr-code i {
+  margin-right: 10px;
+}
+.containercontact .contact-details h3, .containercontact .qr-code h3 {
+  margin-top: 0;
+}
+
+.containercontact .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.containermap {
+  width: 100%;
+}
+
+.containermap iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
   /* kandy day tour */
 
   .sectionkandydaytour {

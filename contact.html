@@ -4,11 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Montserrat font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "iHq3c1joujLQvCR7z",
+        });
+    })();
+    </script>
 </head>
 <body>
-    <section class="contact">
+    <section class="sectioncontact">
+        <nav class="navbar">
+            <div class="logo">
+              <a href="home.html"><img src="/images/tripadvisor_main-removebg-preview.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#destinations">Destinations</a></li>
+              <li class="dropdown">
+                <a href="#tours" class="dropbtn">Tours</a>
+                <div class="dropdown-content">
+                  <a href="#day-tours">Day Tours</a>
+                  <a href="#round-tours">Round Tours</a>
+                </div>
+              </li>
+              <li><a href="step01.html">Customize Tour</a></li>
+              <li><a href="#contact" class="active">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Cover Page Content -->
+            <div class="cover-page">
+                <h1>Contact Us</h1>
+            </div>
+        
+        
         
     </section>
+
+    
+<div class="containercontact">
+    <!-- Left Section: Contact Form -->
+    <div class="left-section">
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" name="name" id="contactname" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="contactemail" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" id="contactphone" placeholder="Your Phone">
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="contactmessage" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Right Section: Contact Details and QR Code -->
+    <div class="right-section">
+        <!-- Contact Details Box -->
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p><i class="icon">📞</i> Phone: +94 77 700 8810</p>
+            <p><i class="icon">✉️</i> Email: admin@lankanaturalhabitat.com</p>
+            <p><i class="icon">📍</i> Address: 234, Nugagaha road, Katunayake.</p>
+        </div>
+
+        <!-- QR Code Box -->
+        <div class="qr-code">
+            <h3>WhatsApp</h3>
+            <p>Scan this QR code to chat with us on WhatsApp:</p>
+            <img src="/images/LNH - Lanka Natural Habitat (1).png" alt="WhatsApp QR Code" width="200px">
+        </div>
+    </div>
+</div>
+
+<!-- Google Map Section -->
+<div class="containermap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d392.7515243936043!2d79.87434989139516!3d7.162108462480057!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1729144405638!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+       <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-left">
+      <ul class="footer-nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="step01.html">Customize Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  
+      <div class="footer-contact">
+        <p>Phone: +94 77 700 8810</p>
+        <p>Address: 234, Nugagaha road, Katunayake</p>
+        <p>Facebook: <a href="https://www.facebook.com/yourpage">Your Facebook Page</a></p>
+        <p>Email: <a href="mailto:admin@lankanaturalhabitat.com">admin@lankanaturalhabitat.com</a></p>
+      </div>
+    </div>
+  
+    <div class="footer-right">
+      <img src="/images/sosrilanka.png" alt="Sponsor 1">
+      <img src="/images/tourradar.png" alt="Sponsor 2">
+      <img src="/images/tripadvisor.png" alt="Sponsor 3">
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
     
 </body>
 </html>

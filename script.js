@@ -1,23 +1,5 @@
 const form = document.querySelector("form"),
-      nextBtn = form.querySelector(".next"),
-      backBtn = form.querySelector(".back"),
       allInputs = form.querySelectorAll(".first input");
-
-nextBtn.addEventListener("click", () => {
-    allInputs.forEach(input => {
-        if(input.value != ""){
-            form.classList.add('secActive')
-        }else{
-            form.classList.remove('secActive')
-        }
-    });
-})
-
-backBtn.addEventListener("click", () => {
-    allInputs.forEach(input => {
-        form.classList.remove('secActive')
-    });
-})
 
 // select cities
 
@@ -167,7 +149,7 @@ function removeElements() {
     })
 }
 
-//Emailjs function
+//Emailjs function for customize
 
 function sendMail(){
     let params = {
@@ -199,3 +181,5 @@ function sendMail(){
     emailjs.send("service_rm60x8h","template_ghus0iq",params).then(alert("Your Plan Submitted Succesfully!"));
     form.reset()
 }
+
+
