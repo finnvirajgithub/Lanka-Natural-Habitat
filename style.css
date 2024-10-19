@@ -909,3 +909,240 @@ ul {
   pointer-events: none; /* Ensures text is not clickable */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better contrast */
 }
+
+
+/* anuradhapura page */
+
+.sectionanuradhapura {
+  background-image: url("/images/anuradhapura.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.anuradhapura {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.anuradhapura h1, h2 {
+  color: #009700;
+}
+.anuradhapura p {
+  color: #34495e;
+}
+.anuradhapura .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+.anuradhapura .attractions-list li {
+  margin-bottom: 10px;
+}
+
+/* sigiriya page */
+
+.sectionsigiriya {
+  background-image: url("/images/sigiriyadaytour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.sigiriya {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.sigiriya h1, h2 {
+  color: #009700;
+}
+.sigiriya p {
+  color: #34495e;
+}
+.sigiriya .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+.sigiriya .attractions-list li {
+  margin-bottom: 10px;
+}
+
+/* colombo page */
+
+.sectioncolombo {
+  background-image: url("/images/colombocitytour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.colombo {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.colombo h1, h2 {
+  color: #009700;
+}
+.colombo p {
+  color: #34495e;
+}
+.colombo .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+.colombo .attractions-list li {
+  margin-bottom: 10px;
+}
+
+/* Galle page */
+
+.sectiongalle {
+  background-image: url("/images/Galle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+  
+
+}
+
+.galle {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.galle h1, h2 {
+  color: #009700;
+}
+.galle p {
+  color: #34495e;
+}
+.galle .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+.galle .attractions-list li {
+  margin-bottom: 10px;
+}
+
+/* kandy page */
+
+.sectionkandy {
+  background-image: url("/images/kandydaytourcopy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.kandy {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.kandy h1, h2 {
+  color: #009700;
+}
+.kandy p {
+  color: #34495e;
+}
+
+/* nuwara eliya page */
+
+.sectionnuwaraeliya {
+  background-image: url("/images/Nuwara-Eliya-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.nuwaraeliya {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.nuwaraeliya h1, h2 {
+  color: #009700;
+}
+.nuwaraeliya p {
+  color: #34495e;
+}
+
+/* udawalawa page */
+
+.sectionudawalawa {
+  background-image: url("/images/Udawalawe-National-Park-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.udawalawa {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.udawalawa h1, h2 {
+  color: #009700;
+}
+.udawalawa p {
+  color: #34495e;
+}
+
+/* yala page */
+
+.sectionyala {
+  background-image: url("/images/YAla.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.yala {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.yala h1, h2 {
+  color: #009700;
+}
+.yala p {
+  color: #34495e;
+}
