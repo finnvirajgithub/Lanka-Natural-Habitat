@@ -56,11 +56,11 @@ section{
   }
 
   .nav-links a.active {
-    color: orange;
+    color: #ed9b05;
   }
   
   .nav-links a:hover {
-    color: orange; 
+    color: #ed9b05; 
     text-decoration: none;/* Change to a hover color if needed */
   }
   
@@ -167,6 +167,26 @@ section{
     font-size: 20px;
 }
 
+/* bio section */
+
+.containerbio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 9rem;
+  height: 100vh;
+}
+.containerbio .left-content {
+  width: 50%;
+}
+.containerbio .right-image {
+  width: 40%;
+}
+.containerbio img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*Customize your plan page */
 
 .section02 {
@@ -178,7 +198,6 @@ section{
 .title-box {
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
 }
 
 .title {
@@ -467,7 +486,7 @@ ul {
     align-items: center;
     height: 50vh; /* Set footer height to 50% of the viewport height */
     padding: 20px;
-    background-color: #333; /* Dark background color */
+    
     color: white;
   }
   
@@ -489,7 +508,7 @@ ul {
   }
   
   .footer-nav-links li a:hover {
-    color: #ff6347; /* Hover color for links */
+    color: #ed9b05; /* Hover color for links */
   }
   
   .footer-contact p {
@@ -502,7 +521,7 @@ ul {
   }
   
   .footer-contact a:hover {
-    color: #ff6347;
+    color: #ed9b05;
   }
   
   /* Right section (Sponsor images) */
@@ -523,6 +542,80 @@ ul {
     transform: scale(1.1); /* Simple hover effect */
     transition: transform 0.3s ease-in-out;
   }
+
+  /* under footer */
+
+.container-under-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.container-under-footer .icon-links {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.container-under-footer .icon-link {
+  width: 50px;
+  height: 50px;
+  font-size: 45px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-under-footer .icon-link:hover {
+  color: #ed9b05;
+}
+
+.container-under-footer .icon-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.container-under-footer .text {
+  font-size: 12px;
+  color: white;
+}
+
+.all-footer {
+  position: relative;
+  background: url(/images/footer.jpg); /* Dark background color */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all-footer a:hover {
+  text-decoration: none;
+}
+
+
+.all-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
+  z-index: 1;
+}
+
+.footer, .container-under-footer {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+
 
   /* contact page */
 
@@ -1217,13 +1310,42 @@ ul {
 
 .sectionpopulardestinations .cards-container-destination {
   padding: 20px;
-  margin: 20px 9rem;
+  margin: 0 9rem;
 }
 
 .sectionpopulardestinations .title-box .title{
   color: white;
   font-weight: 800;
   font-size: 70px;
+  padding-top: 5vh;
+}
+
+/* popular destinations */
+
+.sectionpopularpackages {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  
+}
+
+.sectionpopularpackages .cards-container-packages {
+  padding: 20px;
+  margin: 0 9rem;
+}
+
+.sectionpopularpackages .cards-container-packages .cards-container .card button {
+  background-color: #ed9b05;
+}
+
+.sectionpopularpackages .cards-container-packages .cards-container .card a:hover {
+  text-decoration: none;
+}
+
+.sectionpopularpackages .title-box .title{
+  color: #ed9b05;
+  font-weight: 800;
+  font-size: 70px;
+  padding-top: 5vh;
 }
 
 /* 8 day tour */
@@ -1373,4 +1495,5 @@ header {
 .a14daytour ul {
     padding-left: 20px;
 }
+
 
