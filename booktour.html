@@ -19,17 +19,7 @@
 
     <!-- box icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "iHq3c1joujLQvCR7z",
-        });
-    })();
-    </script>
+    
 </head>
 <body>
     <section class="sectioncontact">
@@ -49,33 +39,36 @@
               <li><a href="step01.html">Customize Tour</a></li>
               <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-          </nav>
+        </nav>
 
-          <!-- Cover Page Content -->
-            <div class="cover-page">
-                <h1>Contact Us</h1>
-            </div>
-        
-        
-        
+        <!-- Cover Page Content -->
+        <div class="cover-page">
+            <h1>Book The Dream Tour...</h1>
+        </div>   
     </section>
 
     
 <div class="containercontact">
     <!-- Left Section: Contact Form -->
     <div class="left-section">
-        <form id="contactForm">
+        <form id="bookingForm">
             <div class="form-group">
-                <input type="text" name="name" id="contactname" placeholder="Your Name" required>
+                <input type="text" name="tour" id="tourTitle" placeholder="Tour title" required>
             </div>
             <div class="form-group">
-                <input type="email" name="email" id="contactemail" placeholder="Your Email" required>
+                <input type="date" id="date" placeholder="Date" required>
             </div>
             <div class="form-group">
-                <input type="tel" name="phone" id="contactphone" placeholder="Your Phone">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <textarea name="message" id="contactmessage" placeholder="Your Message" rows="6" required></textarea>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" id="phone" placeholder="Your Phone">
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="message" placeholder="Your Message" rows="6"></textarea>
             </div>
             <button type="submit">Send Message</button>
         </form>
@@ -100,10 +93,7 @@
     </div>
 </div>
 
-<!-- Google Map Section -->
-<div class="containermap">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d392.7515243936043!2d79.87434989139516!3d7.162108462480057!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1729144405638!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+
 
        <!-- Footer Section -->
        <div class="all-footer">
@@ -152,7 +142,32 @@
       
       </div>
       
-  <script src="script2.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("iHq3c1joujLQvCR7z"); // Replace with your EmailJS user ID
+        })();
+
+        // Autofill form data
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('tourTitle').value = urlParams.get('tour');
+        };
+
+        // Send form data using EmailJS
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_rm60x8h', 'template_bb7jdud', this)
+            .then(function() {
+                alert('Booking request sent successfully!');
+            }, function(error) {
+                alert('Failed to send booking request: ' + JSON.stringify(error));
+            });
+            // Optionally reset the form after submission
+            document.getElementById('bookingForm').reset();
+        });
+    </script>
     
 </body>
 </html>
