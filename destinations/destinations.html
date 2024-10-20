@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LNH - Contact</title>
+    <title>LNH - Destinations</title>
     <link rel="stylesheet" href="/css/style.css">
 
     <!-- Montserrat font-->
@@ -18,26 +18,15 @@
 
     <!-- box icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "iHq3c1joujLQvCR7z",
-        });
-    })();
-    </script>
 </head>
 <body>
-    <section class="sectioncontact">
+    <section class="sectiondestinations">
         <nav class="navbar">
             <div class="logo">
-              <a href="index.html"><img src="/images/tripadvisor_main-removebg-preview.png" alt="Logo"></a>
+              <a href="/index.html"><img src="/images/tripadvisor_main-removebg-preview.png" alt="Logo"></a>
             </div>
             <ul class="nav-links">
-              <li><a href="/destinations/destinations.html">Destinations</a></li>
+              <li><a href="destinations.html" class="active">Destinations</a></li>
               <li class="dropdown">
                 <a href="#tours" class="dropbtn">Tours</a>
                 <div class="dropdown-content">
@@ -46,60 +35,42 @@
                 </div>
               </li>
               <li><a href="step01.html">Customize Tour</a></li>
-              <li><a href="contact.html" class="active">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Cover Page Content -->
         <div class="cover-page">
-            <h1>Contact Us</h1>
+            <h1>Destinations in Sri Lanka</h1>
         </div>
-        
+       
     </section>
 
-    
-    <div class="containercontact">
-        <!-- Left Section: Contact Form -->
-        <div class="left-section">
-            <form id="contactForm">
-                <div class="form-group">
-                    <input type="text" name="name" id="contactname" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="contactemail" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" id="contactphone" placeholder="Your Phone">
-                </div>
-                <div class="form-group">
-                    <textarea name="message" id="contactmessage" placeholder="Your Message" rows="6" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
-        <!-- Right Section: Contact Details and QR Code -->
-        <div class="right-section">
-            <!-- Contact Details Box -->
-            <div class="contact-details">
-                <h3>Contact Details</h3>
-                <p><i class="icon">📞</i> Phone: +94 77 700 8810</p>
-                <p><i class="icon">✉️</i> Email: admin@lankanaturalhabitat.com</p>
-                <p><i class="icon">📍</i> Address: 234, Nugagaha road, Katunayake.</p>
-            </div>
-
-            <!-- QR Code Box -->
-            <div class="qr-code">
-                <h3>WhatsApp</h3>
-                <p>Scan this QR code to chat with us on WhatsApp:</p>
-                <img src="/images/LNH - Lanka Natural Habitat (1).png" alt="WhatsApp QR Code" width="200px">
-            </div>
-        </div>
-    </div>
-
-    <!-- Google Map Section -->
-    <div class="containermap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d392.7515243936043!2d79.87434989139516!3d7.162108462480057!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1729144405638!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="cards-container-destination">
+        <a href="anuradhapura.html" class="card" style="background-image: url('/images/anuradhapura.jpg');">
+            <div class="card-title">Anuradhapura</div>
+        </a>
+        <a href="sigiriya.html" class="card" style="background-image: url('/images/sigiriyadaytour.jpg');">
+            <div class="card-title">Sigiriya</div>
+        </a>
+        <a href="kandy.html" class="card" style="background-image: url('/images/kandydaytour.jpg');">
+            <div class="card-title">Kandy</div>
+        </a>
+        <a href="colombo.html" class="card" style="background-image: url('/images/colombocitytour.jpg');">
+            <div class="card-title">Colombo</div>
+        </a>
+        <a href="nuwaraeliya.html" class="card" style="background-image: url('/images/Nuwara-Eliya-1.jpg');">
+            <div class="card-title">Nuwara Eliya</div>
+        </a>
+        <a href="yala.html" class="card" style="background-image: url('/images/YAla.jpg');">
+            <div class="card-title">Yala</div>
+        </a>
+        <a href="udawalawa.html" class="card" style="background-image: url('/images/udawalawa.jpg');">
+            <div class="card-title">Udawalawa</div>
+        </a>
+        <a href="galle.html" class="card" style="background-image: url('/images/Galle.jpg');">
+            <div class="card-title">Galle</div>
+        </a>
     </div>
 
     <!-- Footer Section -->
@@ -107,11 +78,11 @@
       <footer class="footer">
         <div class="footer-left">
           <ul class="footer-nav-links">
-            <li><a href="/destinations/destinations.html">Destinations</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
             <li><a href="/daytours/daytour.html">Day Tours</a></li>
             <li><a href="/roundtours/round-tours.html">Round Tours</a></li>
-            <li><a href="step01.html">Customize Tour</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/step01.html">Customize Tour</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
       
           <div class="footer-contact">
@@ -138,17 +109,13 @@
               <i class='bx bxl-trip-advisor' ></i>
             </a>
         </div>
-    
-        
-    
         <!-- Inline text at the right corner -->
         <div class="text">
             Copyright © 2024 lankanaturalhabitat. All rights reserved | <a href="https://www.facebook.com/profile.php?id=61561737224959">Return Zero Solutions</a>
         </div>
       </div>
+  
     </div>
-      
-    <script src="/js/script2.js"></script>
-    
+          
 </body>
 </html>
