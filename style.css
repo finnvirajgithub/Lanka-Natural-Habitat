@@ -167,6 +167,26 @@ section{
     font-size: 20px;
 }
 
+/* bio section */
+
+.containerbio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 9rem;
+  height: 100vh;
+}
+.containerbio .left-content {
+  width: 50%;
+}
+.containerbio .right-image {
+  width: 40%;
+}
+.containerbio img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*Customize your plan page */
 
 .section02 {
