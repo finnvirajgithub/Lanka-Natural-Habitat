@@ -101,9 +101,9 @@ section{
     background-repeat: no-repeat;
     background-size: cover;/* Center the image in the section */
     font-family: 'Montserrat', sans-serif;
-    height: 80%;
-    
+    height: 80%; 
   }
+
   .cover-page {
     height: 400px;
     background-position: center;
@@ -209,7 +209,6 @@ section{
     font-size: 60px;
     top: 0%;
     margin: 0%;
-
 }
 
 .title span {
@@ -232,26 +231,30 @@ section{
     background-color: #fff;
     padding: 20px;
 }
+
 .containercustomize h1 {
     text-align: center;
     color: #333;
 }
+
 .containercustomize h2 {
     color: #555;
 }
+
 .containercustomize p {
     color: #666;
     line-height: 1.6;
 }
+
 .containercustomize ul {
     margin: 20px 0;
     padding-left: 20px;
 }
+
 .containercustomize ul li {
     margin: 10px 0;
     color: #666;
 }
-
 
 /* form */
 
@@ -265,7 +268,6 @@ section{
     background-size: cover;/* Center the image in the section */
     font-family: 'Montserrat', sans-serif;
     height: 80%;
-
 }
 
 .formsection {
@@ -274,8 +276,7 @@ section{
     margin-bottom: 20vh;
 }
 
-.container {
-    
+.container {  
     position: relative;
     max-width: 90%;
     width: 100%;
@@ -434,6 +435,7 @@ ul {
     margin-left: 30px;
     width: 700px;
 }
+
 .container form .msg input{
     outline: none;
     font-size: 14px;
@@ -451,23 +453,11 @@ ul {
     border: #009700 1px solid;
 }
 
-
-
 /* footer */
 
 .section07 {
     height: 50%;
 }
-
-/* @media (max-width: 750px){
-    .container form {
-        overflow-y: scroll;
-    }
-
-    .container form::-webkit-scrollbar {
-        display: none;
-    }
-} */
 
 @media (max-width: 550px){
     .container form .fields .input-fields {
@@ -475,7 +465,6 @@ ul {
     }
 
 }
-
 
 /* footer */
 
@@ -615,8 +604,6 @@ ul {
   z-index: 2; /* Ensure content is above the overlay */
 }
 
-
-
   /* contact page */
 
 .sectioncontact {
@@ -635,15 +622,19 @@ ul {
   max-width: 1200px;
   margin: auto;
 }
+
 .containercontact .left-section {
   width: 48%;
 }
+
 .containercontact .right-section {
   width: 48%;
 }
+
 .containercontact .form-group {
   margin-bottom: 15px;
 }
+
 .containercontact .form-group input, .containercontact.form-group textarea {
   width: 100%;
   padding: 10px;
@@ -664,18 +655,22 @@ ul {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .containercontact button:hover {
   background-color: #0056b3;
 }
+
 .containercontact .contact-details, .qr-code {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 .containercontact .contact-details i, .containercontact .qr-code i {
   margin-right: 10px;
 }
+
 .containercontact .contact-details h3, .containercontact .qr-code h3 {
   margin-top: 0;
 }
@@ -704,14 +699,12 @@ ul {
 
   /* kandy day tour */
 
-  .sectionkandydaytour {
-    background-image: url("/images/kandydaytourcopy.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;/* Center the image in the section */
-    font-family: 'Montserrat', sans-serif;
-    height: 80%;
-    
-
+.sectionkandydaytour {
+  background-image: url("/images/kandydaytourcopy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
 }
 
 .containerkandy {
@@ -720,12 +713,15 @@ ul {
     background: #fff;
     padding: 20px;
 }
+
 .containerkandy h1, h2 {
     color: #333;
 }
+
 .containerkandy .itinerary-item {
     margin-bottom: 20px;
 }
+
 .containerkandy .time {
     font-weight: bold;
     color: #555;
@@ -737,14 +733,12 @@ ul {
 
  /* sigiriya day tour */
 
- .sectionsigiriyadaytour {
-  background-image: url("/images/sigiriyadaytour.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;/* Center the image in the section */
-  font-family: 'Montserrat', sans-serif;
-  height: 80%;
-  
-
+.sectionsigiriyadaytour {
+background-image: url("/images/sigiriyadaytour.jpg");
+background-repeat: no-repeat;
+background-size: cover;/* Center the image in the section */
+font-family: 'Montserrat', sans-serif;
+height: 80%;
 }
 
 .containersigiriya {
@@ -753,12 +747,15 @@ ul {
   background: #fff;
   padding: 20px;
 }
+
 .containersigiriya h1, h2 {
   color: #333;
 }
+
 .containersigiriya .itinerary-item {
   margin-bottom: 20px;
 }
+
 .containersigiriya .time {
   font-weight: bold;
   color: #555;
@@ -776,8 +773,6 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .containercolombo {
@@ -786,9 +781,11 @@ ul {
   background: #fff;
   padding: 20px;
 }
+
 .containercolombo h1, h2 {
   color: #333;
 }
+
 .containercolombo .itinerary-item {
   margin-bottom: 20px;
 }
@@ -801,8 +798,6 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .containernegombo {
@@ -811,9 +806,11 @@ ul {
   background: #fff;
   padding: 20px;
 }
+
 .containernegombo h1, h2 {
   color: #333;
 }
+
 .containernegombo .itinerary-item {
   margin-bottom: 20px;
 }
@@ -821,16 +818,13 @@ ul {
   
   /* 3day tour */
 
-  .section3daytour {
-    background-image: url("/images/sigiriyadaytour.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;/* Center the image in the section */
-    font-family: 'Montserrat', sans-serif;
-    height: 80%;
-    
-
+.section3daytour {
+  background-image: url("/images/sigiriyadaytour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
 }
-
 
 /* day tour page */
 
@@ -840,8 +834,6 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .containerbenifitdaytour {
@@ -954,18 +946,12 @@ ul {
 
 /* round tours */
 
-
-
-/* day tour page */
-
 .sectionroundtour {
   background-image: url("/images/20181008_093328copy.jpg");
   background-repeat: no-repeat;
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .containerbenifitroundtour {
@@ -1017,11 +1003,7 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
-
-
 
 .cards-container-destination {
   display: grid;
@@ -1062,7 +1044,6 @@ ul {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better contrast */
 }
 
-
 /* anuradhapura page */
 
 .sectionanuradhapura {
@@ -1071,8 +1052,6 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .anuradhapura {
@@ -1086,13 +1065,16 @@ ul {
 .anuradhapura h1, h2 {
   color: #009700;
 }
+
 .anuradhapura p {
   color: #34495e;
 }
+
 .anuradhapura .attractions-list {
   list-style-type: square;
   margin-left: 20px;
 }
+
 .anuradhapura .attractions-list li {
   margin-bottom: 10px;
 }
@@ -1105,8 +1087,6 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .sigiriya {
@@ -1120,13 +1100,16 @@ ul {
 .sigiriya h1, h2 {
   color: #009700;
 }
+
 .sigiriya p {
   color: #34495e;
 }
+
 .sigiriya .attractions-list {
   list-style-type: square;
   margin-left: 20px;
 }
+
 .sigiriya .attractions-list li {
   margin-bottom: 10px;
 }
@@ -1139,8 +1122,6 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .colombo {
@@ -1154,13 +1135,16 @@ ul {
 .colombo h1, h2 {
   color: #009700;
 }
+
 .colombo p {
   color: #34495e;
 }
+
 .colombo .attractions-list {
   list-style-type: square;
   margin-left: 20px;
 }
+
 .colombo .attractions-list li {
   margin-bottom: 10px;
 }
@@ -1173,8 +1157,6 @@ ul {
   background-size: cover;/* Center the image in the section */
   font-family: 'Montserrat', sans-serif;
   height: 80%;
-  
-
 }
 
 .galle {
@@ -1188,13 +1170,16 @@ ul {
 .galle h1, h2 {
   color: #009700;
 }
+
 .galle p {
   color: #34495e;
 }
+
 .galle .attractions-list {
   list-style-type: square;
   margin-left: 20px;
 }
+
 .galle .attractions-list li {
   margin-bottom: 10px;
 }
@@ -1220,6 +1205,7 @@ ul {
 .kandy h1, h2 {
   color: #009700;
 }
+
 .kandy p {
   color: #34495e;
 }
@@ -1245,6 +1231,7 @@ ul {
 .nuwaraeliya h1, h2 {
   color: #009700;
 }
+
 .nuwaraeliya p {
   color: #34495e;
 }
@@ -1270,6 +1257,7 @@ ul {
 .udawalawa h1, h2 {
   color: #009700;
 }
+
 .udawalawa p {
   color: #34495e;
 }
@@ -1295,6 +1283,7 @@ ul {
 .yala h1, h2 {
   color: #009700;
 }
+
 .yala p {
   color: #34495e;
 }
@@ -1305,7 +1294,6 @@ ul {
   background: #007a00;
   font-family: 'Montserrat', sans-serif;
   max-width: auto;
-  
 }
 
 .sectionpopulardestinations .cards-container-destination {
@@ -1325,7 +1313,6 @@ ul {
 .sectionpopularpackages {
   font-family: 'Montserrat', sans-serif;
   max-width: auto;
-  
 }
 
 .sectionpopularpackages .cards-container-packages {
@@ -1372,15 +1359,18 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 .a8daytour .itinerary-day {
     margin: 20px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .a8daytour h1, h2, h3 {
     color: #004d99;
 }
+
 .a8daytour ul {
     padding-left: 20px;
 }
@@ -1409,15 +1399,18 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 .a12daytour .itinerary-day {
     margin: 20px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .a12daytour h1, h2, h3 {
     color: #004d99;
 }
+
 .a12daytour ul {
     padding-left: 20px;
 }
@@ -1446,15 +1439,18 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 .a10daytour .itinerary-day {
     margin: 20px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .a10daytour h1, h2, h3 {
     color: #004d99;
 }
+
 .a10daytour ul {
     padding-left: 20px;
 }
@@ -1483,17 +1479,18 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 .a14daytour .itinerary-day {
     margin: 20px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .a14daytour h1, h2, h3 {
     color: #004d99;
 }
+
 .a14daytour ul {
     padding-left: 20px;
 }
-
-

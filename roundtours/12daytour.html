@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>LNH - 12 Day Tour</title>
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Montserrat font-->
 
@@ -24,29 +23,27 @@
     <section class="section12daytour">
         <nav class="navbar">
             <div class="logo">
-              <a href="home.html"><img src="/images/tripadvisor_main-removebg-preview.png" alt="Logo"></a>
+              <a href="index.html"><img src="/images/tripadvisor_main-removebg-preview.png" alt="Logo"></a>
             </div>
             <ul class="nav-links">
-              <li><a href="destinations.html"">Destinations</a></li>
+              <li><a href="/destinations/destinations.html">Destinations</a></li>
               <li class="dropdown">
                 <a href="#tours" class="dropbtn active">Tours</a>
                 <div class="dropdown-content">
-                  <a href="daytour.html">Day Tours</a>
-                  <a href="round-tours.html">Round Tours</a>
+                  <a href="/daytours/daytour.html">Day Tours</a>
+                  <a href="/roundtours/">Round Tours</a>
                 </div>
               </li>
               <li><a href="step01.html">Customize Tour</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
-          </nav>
+        </nav>
 
-          <!-- Cover Page Content -->
-            <div class="cover-page">
-                <h1>12 - Day Tour</h1>
-            </div>
-        
-        
-        
+        <!-- Cover Page Content -->
+        <div class="cover-page">
+            <h1>12 - Day Tour</h1>
+        </div>
+      
     </section>
     <header>
         <h1>12-Day Sri Lanka Tour Itinerary</h1>
@@ -123,29 +120,23 @@
             <h2>Day 12: Colombo City Tour / Departure</h2>
             <p>Explore Colombo city, visit landmarks like the Red Mosque and Gangarama Temple, and enjoy your final meal before your departure.</p>
             <p><strong>Drop-off:</strong> Colombo Airport or your hotel.</p>
-        </div>
-        
-        
-</div>
+        </div>   
+    </div>
 
-<div class="btninhome">
-  <button class="btn btn-success" onclick="openBookingForm('12 Day Tour')">Book Now</button>
-  </div>
+    <div class="btninhome">
+      <button class="btn btn-success" onclick="openBookingForm('12 Day Tour')">Book Now</button>
+    </div>
     
-
-
-    
-
        <!-- Footer Section -->
-       <div class="all-footer">
+      <div class="all-footer">
         <footer class="footer">
           <div class="footer-left">
             <ul class="footer-nav-links">
-              <li><a href="destinations.html">Destinations</a></li>
-              <li><a href="daytour.html">Day Tours</a></li>
+              <li><a href="/destinations/destinations.html">Destinations</a></li>
+              <li><a href="/daytours/daytour.html">Day Tours</a></li>
               <li><a href="roundtours.html">Round Tours</a></li>
-              <li><a href="step01.html">Customize Tour</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/step01.html">Customize Tour</a></li>
+              <li><a href="/contact.html">Contact</a></li>
             </ul>
         
             <div class="footer-contact">
@@ -172,22 +163,19 @@
                 <i class='bx bxl-trip-advisor' ></i>
               </a>
           </div>
-      
-          
-      
+  
           <!-- Inline text at the right corner -->
           <div class="text">
               Copyright © 2024 lankanaturalhabitat. All rights reserved | <a href="https://www.facebook.com/profile.php?id=61561737224959">Return Zero Solutions</a>
           </div>
+        </div>
       </div>
       
-      </div>
-      
-  <script>
-    function openBookingForm(tourTitle) {
-        window.location.href = `booktour.html?tour=${tourTitle}`;
-    }
-  </script>
+      <script>
+        function openBookingForm(tourTitle) {
+            window.location.href = `/booktour.html?tour=${tourTitle}`;
+        }
+      </script>
     
 </body>
 </html>
