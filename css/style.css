@@ -18,6 +18,17 @@ section{
     padding: 0 9%;
 }
 
+/* whatsapp */
+
+.whatsapp_float {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  left: 30px;
+  z-index: 100;
+}
+
+
 /* Home page */
 
 /* Navbar Styling */
@@ -104,6 +115,16 @@ section{
     height: 80%; 
   }
 
+  @media (max-width: 768px){
+    .sectionhome {
+      background-image: url("/images/home-phone.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;/* Center the image in the section */
+      font-family: 'Montserrat', sans-serif;
+      height: 80%; 
+    }
+  }
+
   .cover-page {
     height: 400px;
     background-position: center;
@@ -118,6 +139,11 @@ section{
     z-index: 9;
     font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .cover-page .hometext {
+   font-size: 80px;
+   font-weight: 800;
   }
 
   .cover-page::after {
@@ -203,6 +229,12 @@ section{
 .title {
     font-family: 'montserrat', sans-serif;
     padding-top: 10px;
+}
+
+.titlehome{
+  font-weight: 900; 
+  color: #ed9b05; 
+  font-size: 50px;
 }
 
 .section02 .title {
@@ -697,6 +729,65 @@ ul {
   border: 0;
 }
 
+@media (max-width: 768px){
+  .section06 {
+    background-image: url("/images/customize-phone.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+}
+
+  .sectioncontact {
+    background-image: url("/images/contactus-phone.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+    margin-bottom: 50px;
+  }
+
+  .sectionbook {
+    background-image: url("/images/booktour-phone.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+    margin-bottom: 50px;
+  }
+
+  .containercontact {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .containercontact .left-section {
+    width: 100%;
+  }
+  
+  .containercontact .right-section {
+    width: 100%;
+  }
+  
+  
+  .containercontact.form-group textarea {
+    width: 100%;
+  }
+  .containercontact .contact-details h3, .containercontact .qr-code h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .containercontact .contact-details p, .containercontact .qr-code p{
+    font-size: 15px;
+  }
+  
+}
+
   /* kandy day tour */
 
 .sectionkandydaytour {
@@ -729,6 +820,38 @@ ul {
 
 .containerkandy ul {
     padding-left: 20px;
+}
+
+@media (max-width: 768px){
+  .sectionkandydaytour {
+    background-image: url("/images/kandy-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .containerkandy {
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
+
+  .containerkandy .itinerary-item {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .containerkandy h1, h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .containerkandy h2 {
+    font-size: 1.5rem;
+  } 
+  
 }
 
  /* sigiriya day tour */
@@ -765,6 +888,37 @@ height: 80%;
   padding-left: 20px;
 }
 
+@media (max-width: 768px){
+  .sectionsigiriyadaytour {
+    background-image: url("/images/sigiriya-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+    }
+
+  .containersigiriya {
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .containersigiriya .itinerary-item {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .containersigiriya h1, h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .containersigiriya h2 {
+    font-size: 1.5rem;
+  } 
+}
+
 /* colombo city tour */
 
 .sectioncolombocitytour {
@@ -788,6 +942,37 @@ height: 80%;
 
 .containercolombo .itinerary-item {
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+  .sectioncolombocitytour {
+    background-image: url("/images/colombo-phone.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .containercolombo {
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .containercolombo .itinerary-item {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .containercolombo h1, h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .containercolombo h2 {
+    font-size: 1.5rem;
+  } 
 }
 
 /* negombo city tour */
@@ -815,6 +1000,27 @@ height: 80%;
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px){
+  .containernegombo {
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .containernegombo .itinerary-item {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .containernegombo h1, h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .containernegombo h2 {
+    font-size: 1.5rem;
+  } 
+}
   
   /* 3day tour */
 
@@ -936,12 +1142,40 @@ height: 80%;
   color: white;
   border: none;
   cursor: pointer;
+  text-decoration: none;
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
 .view-button:hover {
   background-color: #007a00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* day tours mobile responsive */
+
+@media (max-width: 768px){
+
+.sectiondaytour {
+  background-image: url("/images/day-tour-phone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.cards-container {
+  display: block;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 20px; /* Spacing between cards */
+  justify-items: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  }
 }
 
 /* round tours */
@@ -995,6 +1229,19 @@ height: 80%;
   line-height: 1.6;
 }
 
+/* round tours mobile responsive */
+@media (max-width: 768px){
+  .sectionroundtour {
+    background-image: url("/images/udawalawa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+}
+
+
+
 /* destinations page */
 
 .sectiondestinations {
@@ -1017,6 +1264,7 @@ height: 80%;
   display: block;
   width: 100%;
   padding-bottom: 56.25%; /* Aspect ratio for landscape (16:9) */
+  margin: auto;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -1044,6 +1292,29 @@ height: 80%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for better contrast */
 }
 
+@media (max-width: 768px){
+  .cards-container-destination .card {
+    position: relative;
+    display: block;
+    width: 90%;
+    padding-bottom: 56.25%; /* Aspect ratio for landscape (16:9) */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cards-container-destination .card-title {
+    font-size: 80px;
+  }
+}
+
 /* anuradhapura page */
 
 .sectionanuradhapura {
@@ -1068,6 +1339,7 @@ height: 80%;
 
 .anuradhapura p {
   color: #34495e;
+  width: 100%;
 }
 
 .anuradhapura .attractions-list {
@@ -1078,6 +1350,42 @@ height: 80%;
 .anuradhapura .attractions-list li {
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px){
+  .sectionanuradhapura {
+    background-image: url("/images/anuradhapura-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .anuradhapura {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .anuradhapura h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .anuradhapura p {
+    color: #34495e;
+  }
+  
+  .anuradhapura .attractions-list {
+    list-style-type: none;
+  }
+  
+  .anuradhapura .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
 
 /* sigiriya page */
 
@@ -1114,6 +1422,41 @@ height: 80%;
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px){ 
+  .sectionsigiriya {
+    background-image: url("/images/sigiriya-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .sigiriya {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sigiriya h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .sigiriya p {
+    color: #34495e;
+  }
+  
+  .sigiriya .attractions-list {
+    list-style-type: none;
+  }
+  
+  .sigiriya .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
 /* colombo page */
 
 .sectioncolombo {
@@ -1148,6 +1491,42 @@ height: 80%;
 .colombo .attractions-list li {
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px){
+  .sectioncolombo {
+    background-image: url("/images/colombo-phone.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .colombo {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .colombo h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .colombo p {
+    color: #34495e;
+  }
+  
+  .colombo .attractions-list {
+    list-style-type: none;
+  }
+  
+  .colombo .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
 
 /* Galle page */
 
@@ -1184,6 +1563,42 @@ height: 80%;
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px){
+  .sectiongalle {
+    background-image: url("/images/galle-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .galle {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .galle h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .galle p {
+    color: #34495e;
+  }
+  
+  .galle .attractions-list {
+    list-style-type: none;
+  }
+  
+  .galle .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
 /* kandy page */
 
 .sectionkandy {
@@ -1209,6 +1624,41 @@ height: 80%;
 .kandy p {
   color: #34495e;
 }
+
+@media (max-width: 768px){
+  .sectionkandy {
+    background-image: url("/images/kandy-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+  .kandy {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .kandy h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .kandy p {
+    color: #34495e;
+  }
+  
+  .kandy .attractions-list {
+    list-style-type: none;
+  }
+  
+  .kandy .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
 
 /* nuwara eliya page */
 
@@ -1236,6 +1686,34 @@ height: 80%;
   color: #34495e;
 }
 
+@media (max-width: 768px){
+  .nuwaraeliya {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .nuwaraeliya h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .nuwaraeliya p {
+    color: #34495e;
+  }
+  
+  .nuwaraeliya .attractions-list {
+    list-style-type: none;
+  }
+  
+  .nuwaraeliya .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
 /* udawalawa page */
 
 .sectionudawalawa {
@@ -1261,6 +1739,42 @@ height: 80%;
 .udawalawa p {
   color: #34495e;
 }
+
+@media (max-width: 768px){
+  .sectionudawalawa {
+    background-image: url("/images/udawalawa-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .udawalawa {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .udawalawa h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .udawalawa p {
+    color: #34495e;
+  }
+  
+  .udawalawa .attractions-list {
+    list-style-type: none;
+  }
+  
+  .udawalawa .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
 
 /* yala page */
 
@@ -1288,9 +1802,51 @@ height: 80%;
   color: #34495e;
 }
 
+@media (max-width: 768px){
+  .sectionyala {
+    background-image: url("/images/yala-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .yala {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .yala h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .yala p {
+    color: #34495e;
+  }
+  
+  .yala .attractions-list {
+    list-style-type: none;
+  }
+  
+  .yala .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
 /* popular destinations */
 
 .sectionpopulardestinations {
+  background: #007a00;
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+}
+
+.destinationcolor {
   background: #007a00;
   font-family: 'Montserrat', sans-serif;
   max-width: auto;
@@ -1308,7 +1864,7 @@ height: 80%;
   padding-top: 5vh;
 }
 
-/* popular destinations */
+/* popular packages */
 
 .sectionpopularpackages {
   font-family: 'Montserrat', sans-serif;
@@ -1331,7 +1887,7 @@ height: 80%;
 .sectionpopularpackages .title-box .title{
   color: #ed9b05;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 60px;
   padding-top: 5vh;
 }
 
@@ -1375,6 +1931,33 @@ header {
     padding-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .section8daytour {
+    background-image: url("/images/8day-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .a8daytour {
+    font-family: 'Montserrat', sans-serif;
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .daytopic {
+      background-color: #007a00;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 25px;
+  }
+}
+
+
 /* 12 day tour */
 
 .section12daytour {
@@ -1413,6 +1996,24 @@ header {
 
 .a12daytour ul {
     padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .section12daytour {
+    background-image: url("/images/kitulgala.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .a12daytour {
+    font-family: 'Montserrat', sans-serif;
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
 }
 
 /* 10 day tour */
@@ -1455,6 +2056,24 @@ header {
     padding-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .section10daytour {
+    background-image: url("/images/10day-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .a10daytour {
+    font-family: 'Montserrat', sans-serif;
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
+}
+
 /* 14 day tour */
 
 .section14daytour {
@@ -1494,3 +2113,330 @@ header {
 .a14daytour ul {
     padding-left: 20px;
 }
+
+@media (max-width: 768px) {
+  .section14daytour {
+    background-image: url("/images/pasikudah.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .a14daytour {
+    font-family: 'Montserrat', sans-serif;
+    max-width: auto;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+  }
+}
+
+/* mobile responsive for index.html */
+
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Show nav-links when .active is added */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .logo img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .cover-page h1 {
+      font-size: 32px; /* Smaller font size for mobile */
+      padding: 0 20px; /* Add some padding for better readability */
+      text-align: center; /* Center text alignment */
+  }
+
+  .cover-page .hometext {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0;
+   }
+  
+  .sectionhome {
+      background-size: cover; /* Ensure background still covers */
+  }
+}
+
+@media (max-width: 550px) {
+  .cover-page .hometext {
+      font-size: 32px; /* Smaller font size for very small screens */
+  }
+}
+
+/* Media Query for Title Box on Mobile Devices */
+@media (max-width: 768px) {
+  .titlehome {
+      text-align: center;
+      font-size: 40px; /* Smaller font size for tablet screens */
+      padding: 5px 10px; /* Add padding for spacing */
+  }
+}
+
+@media (max-width: 550px) {
+  .titlehome {
+    text-align: center;
+      font-size: 24px; /* Further reduce font size for mobile */
+      padding: 5px 5px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* container bio */
+@media (max-width: 768px) {
+  .containerbio {
+    display: grid;
+    height: auto;
+    margin: 0;
+  }
+
+  .containerbio .left-content,
+  .containerbio .right-image {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+/* section 2 */
+@media (max-width: 768px) {
+  .section02 .title-box .title{
+    text-align: center;
+      font-size: 30px; /* Smaller font size for tablet screens */
+      padding: 5px 10px;
+  }
+
+  .section02 {
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customize-plan-para {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+/* popular destinations */
+@media (max-width: 768px) {
+
+  * {
+    margin: 0;
+  }
+  .sectionpopulardestinations .title-box .title {
+    text-align: center;
+      font-size: 50px; /* Smaller font size for tablet screens */
+      padding: 5px 10px;
+  }
+
+  .cards-container-destination {
+    display: block;/* Margin between cards */
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .cards-container-destination .card-title {
+    font-size: 2rem;  
+  } 
+
+  .cards-container-destination .card {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+  }
+  .destinationcolor {
+    background: #007a00;
+    font-family: 'Montserrat', sans-serif;
+    max-width: auto;
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 368px) {
+  .sectionpopulardestinations .title-box .title {
+    text-align: center;
+      font-size: 10px; /* Smaller font size for tablet screens */
+      padding: 5px 10px;
+  }
+
+  .cards-container-destination {
+    display: block;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  
+  .cards-container-destination .card-title {
+    font-size: 3rem;  
+  } 
+
+  .sectionpopulardestinations .card {
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+}
+
+/* popular packages */
+@media (max-width: 768px) {
+  .sectionpopularpackages h1 {
+    text-align: center;
+      font-size: 10px; /* Smaller font size for tablet screens */
+      padding: 5px 10px;
+  }
+
+  .sectionpopularpackages .title-box .title{
+    color: #ed9b05;
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 5vh;
+  }
+  
+}
+
+/* footer */
+@media (max-width: 768px) {
+  .section07 {
+    height: 100vh;
+  }
+  
+  
+  /* footer */
+  
+  /* Footer Styling */
+  .footer {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh; /* Set footer height to 50% of the viewport height */
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Left section (Nav links and contact info) */
+  .footer-left {
+    width: 100%; /* Takes up 60% of the footer */
+  }
+  
+  .footer-nav-links {
+    list-style: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  /* Right section (Sponsor images) */
+  .footer-right {
+    width: 100%; /* Takes up 30% of the footer */
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-right img {
+    width: 150px; /* Adjust the size of sponsor images */
+    height: auto;
+    margin-left: 15px;
+  }
+  
+  .footer-right img:hover {
+    transform: scale(1.1); /* Simple hover effect */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* under footer */
+  
+  .container-under-footer {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  margin-top: 300px;
+  }
+  
+  .container-under-footer .icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  }
+  
+  
+  .all-footer {
+  height: 145vh;
+  position: relative;
+  background: url(/images/footer.jpg); /* Dark background color */
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  }
+  
+  
+}
+
+@media (max-width: 450px){
+  .all-footer {
+    height: 70vh;
+    position: relative;
+    background: url(/images/footer.jpg); /* Dark background color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    }
+
+    .container-under-footer {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 30px;
+      margin-top: 50px;
+      }
+}
+

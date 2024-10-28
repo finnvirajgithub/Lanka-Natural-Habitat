@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
+  <div class="whatsapp_float">
+    <a href="https://wa.me/94719089368" target="_blank"><img src="/images/whatsapp.png" width="70px" alt="" srcset="" class="whatsapp_float_btn"></a>
+  </div>
     <section class="sectiondestinations">
         <nav class="navbar">
             <div class="logo">
@@ -37,6 +40,9 @@
               <li><a href="step01.html">Customize Tour</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger" onclick="toggleNavbar()">
+              &#9776; <!-- Unicode for hamburger icon -->
+            </div>
         </nav>
 
         <!-- Cover Page Content -->
@@ -116,6 +122,13 @@
       </div>
   
     </div>
+    <script>
+      function toggleNavbar() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  
+    </script> 
           
 </body>
 </html>

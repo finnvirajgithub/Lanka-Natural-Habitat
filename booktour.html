@@ -21,7 +21,10 @@
     
 </head>
 <body>
-    <section class="sectioncontact">
+    <div class="whatsapp_float">
+        <a href="https://wa.me/94719089368" target="_blank"><img src="/images/whatsapp.png" width="70px" alt="" srcset="" class="whatsapp_float_btn"></a>
+      </div>
+    <section class="sectioncontact sectionbook">
         <nav class="navbar">
             <div class="logo">
               <a href="index.html"><img src="/images/tripadvisor_main-removebg-preview.png" alt="Logo"></a>
@@ -38,11 +41,14 @@
               <li><a href="step01.html">Customize Tour</a></li>
               <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
+            <div class="hamburger" onclick="toggleNavbar()">
+                &#9776; <!-- Unicode for hamburger icon -->
+              </div>
         </nav>
 
         <!-- Cover Page Content -->
         <div class="cover-page">
-            <h1>Book The Dream Tour...</h1>
+            <h1>Book Your Dream Tour...</h1>
         </div>   
     </section>
 
@@ -162,6 +168,13 @@
             document.getElementById('bookingForm').reset();
         });
     </script>
+    <script>
+        function toggleNavbar() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+      }
+  
+      </script>
     
 </body>
 </html>
