@@ -1838,6 +1838,438 @@ a:hover {
   }
 } 
 
+/* wilpattu page */
+
+.sectionWilpattu {
+  background-image: url("/images/wilpattu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.Wilpattu {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.Wilpattu h1, h2 {
+  color: #009700;
+}
+
+.Wilpattu p {
+  color: #34495e;
+  width: 100%;
+}
+
+.Wilpattu .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.Wilpattu .attractions-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+  .sectionWilpattu {
+    background-image: url("/images/wilpattu-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .Wilpattu {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Wilpattu h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .Wilpattu p {
+    color: #34495e;
+  }
+  
+  .Wilpattu .attractions-list {
+    list-style-type: none;
+  }
+  
+  .Wilpattu .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
+/* jaffna page */
+
+.sectionjaffna {
+  background-image: url("/images/jaffna.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.jaffna {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.jaffna h1, h2 {
+  color: #009700;
+}
+
+.jaffna p {
+  color: #34495e;
+  width: 100%;
+}
+
+.jaffna .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.jaffna .attractions-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+  .sectionjaffna {
+    background-image: url("/images/jaffna-phone.webp");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .jaffna {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .jaffna h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .jaffna p {
+    color: #34495e;
+  }
+  
+  .jaffna .attractions-list {
+    list-style-type: none;
+  }
+  
+  .jaffna .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
+/* trinco page */
+
+.sectiontrinco {
+  background-image: url("/images/trico.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.trinco {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.trinco h1, h2 {
+  color: #009700;
+}
+
+.trinco p {
+  color: #34495e;
+  width: 100%;
+}
+
+.trinco .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.trinco .attractions-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+  .sectiontrinco {
+    background-image: url("/images/trico-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .trinco {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .trinco h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .trinco p {
+    color: #34495e;
+  }
+  
+  .trinco .attractions-list {
+    list-style-type: none;
+  }
+  
+  .trinco .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
+/* Arugambay page */
+
+.sectionarugambay {
+  background-image: url("/images/arugambay.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.arugambay {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.arugambay h1, h2 {
+  color: #009700;
+}
+
+.arugambay p {
+  color: #34495e;
+  width: 100%;
+}
+
+.arugambay .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.arugambay .attractions-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+  .sectionarugambay {
+    background-image: url("/images/arugambay-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .arugambay {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .arugambay h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .arugambay p {
+    color: #34495e;
+  }
+  
+  .arugambay .attractions-list {
+    list-style-type: none;
+  }
+  
+  .arugambay .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
+/* Ella page */
+
+.sectionella {
+  background-image: url("/images/ella.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.ella {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.ella h1, h2 {
+  color: #009700;
+}
+
+.ella p {
+  color: #34495e;
+  width: 100%;
+}
+
+.ella .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.ella .attractions-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+  .sectionella {
+    background-image: url("/images/ella-phone.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .ella {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .ella h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .ella p {
+    color: #34495e;
+  }
+  
+  .ella .attractions-list {
+    list-style-type: none;
+  }
+  
+  .ella .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
+/* mirissa page */
+
+.sectionmirissa {
+  background-image: url("/images/mirissa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;/* Center the image in the section */
+  font-family: 'Montserrat', sans-serif;
+  height: 80%;
+}
+
+.mirissa {
+  font-family: 'Montserrat', sans-serif;
+  max-width: auto;
+  margin: 20px 9rem;
+  background: #fff;
+  padding: 20px;
+}
+
+.mirissa h1, h2 {
+  color: #009700;
+}
+
+.mirissa p {
+  color: #34495e;
+  width: 100%;
+}
+
+.mirissa .attractions-list {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.mirissa .attractions-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+  .sectionmirissa {
+    background-image: url("/images/mirissa-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;/* Center the image in the section */
+    font-family: 'Montserrat', sans-serif;
+    height: 80%;
+  }
+
+  .mirissa {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vh;
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .mirissa h1, h2 {
+    color: #009700;
+    text-align: center;
+  }
+  
+  .mirissa p {
+    color: #34495e;
+  }
+  
+  .mirissa .attractions-list {
+    list-style-type: none;
+  }
+  
+  .mirissa .attractions-list li {
+    margin-bottom: 10px;
+  }
+} 
+
 /* popular destinations */
 
 .sectionpopulardestinations {
